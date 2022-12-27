@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="filter"
+        android:title="FILTER">
+        <ListPreference
+            android:key="movie_category"
+            android:summary="Movie Popular"
+            android:entries="@array/movie_category"
+            android:entryValues="@array/movie_category_values"
+            android:defaultValue="popular"
+            android:title="Category"/>
+        <SeekBarPreference
+            android:key="movie_rate"
+            android:title="Movie with rate from : "
+            android:summary="5"
+            android:defaultValue="5"
+            android:max="10"/>
+        <EditTextPreference
+            android:key="movie_release_year"
+            android:dialogTitle="From release year :"
+            android:title="From release year : "
+            android:summary="2022"
+            android:defaultValue="2022"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="sort"
+        android:title="SORT BY">
+        <ListPreference
+            android:defaultValue="none"
+            android:entries="@array/sort"
+            android:summary="None"
+            android:entryValues="@array/sort_values"
+            android:key="movie_sort"
+            android:title="Category"/>
+    </PreferenceCategory>
+</PreferenceScreen>
