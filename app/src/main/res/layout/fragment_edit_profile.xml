@@ -24,18 +24,20 @@
         <EditText
             android:id="@+id/et_name"
             android:layout_width="match_parent"
-            android:textColor="@color/black"
-            android:textColorHint="@color/back_ground"
             android:layout_height="wrap_content"
-            android:hint="Name" />
+            android:hint="Name"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/back_ground" />
 
         <EditText
             android:id="@+id/et_email"
-            android:textColor="@color/black"
-            android:textColorHint="@color/back_ground"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email" />
+            android:hint="Email"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/back_ground" />
 
         <EditText
             android:id="@+id/et_dob"
